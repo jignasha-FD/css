@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      div {
+        margin: 10px 0px;
+        height: 500px;
+        color: blue;
+        border: 10px dashed pink;
+      }
+      .background-color {
+        background-color: aquamarine;
+      }
+      .background-image {
+        background-image: url(/Image/tree.jpg);
+      }
+      .background-position {
+        background-image: url(/Image/butterfly.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-position: top;
+        background-position: bottom;
+        background-position: center center;
+        background-size: 400px;
+      }
+      .background-size {
+        background-image: url(/Image/peacock.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: contain;
+      }
+      .background-repeat {
+        background-image: url(/Image/tiger.jpg);
+        background-repeat: no-repeat;
+        background-repeat: repeat-x;
+        background-repeat: repeat-y;
+        background-repeat: space;
+        background-repeat: round;
+      }
+      .background-origin {
+        background-image: url(/Image/css1.png);
+        background-origin: padding-box;
+        background-origin: border-box;
+        background-origin: content-box;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: black;
+      }
+      .background-clip {
+        background-image: url(/Image/css1.png);
+        background-clip: padding-box;
+        background-clip: border-box;
+        background-clip: content-box;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: black;
+      }
+      .background-attachment {
+        background-image: url(/Image/html.jpg);
+      }
+
+      .background-attachment {
+        background-image: url(/Image/html.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+      }
+      .shorthand-background {
+        background: url(/Image/peacock.jpeg) no-repeat center center/cover;
+      }
+      .Multiple-background {
+        background-image: url(/Image/html.jpg), url(/Image/css1.png);
+        background-repeat: no-repeat;
+        background-size: 300px, cover;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Background properties In CSS</h1>
+    <ul>
+      <li>background-color</li>
+      <li>background-image</li>
+      <li>background-position</li>
+      <li>background-size</li>
+      <li>background-repeat</li>
+      <li>background-origin</li>
+      <li>background-clip</li>
+      <li>background-attachment</li>
+      <li>shorthand-background</li>
+      <li>Multiple-background</li>
+    </ul>
+
+    <hr />
+    <div class="background-color">background-color</div>
+    <div class="background-image">background-image</div>
+    <div class="background-position">background-position</div>
+    <div class="background-size">background-size</div>
+    <div class="background-repeat">background-repeat</div>
+    <div class="background-origin">background-origin</div>
+    <div class="background-clip">background-clip</div>
+    <div class="background-attachment">background-attachment</div>
+    <div class="shorthand-background">shorthand-background</div>
+    <div class="Multiple-background">Multiple-background</div>
+  </body>
+</html>
