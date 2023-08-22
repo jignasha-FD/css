@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image gallery</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .imagegallery {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        border: 3px solid gray;
+        height: 100vh;
+        gap: 10px;
+      }
+
+      .i1 {
+        background: url(../../Image/1.jpg) no-repeat center center/cover;
+        width: 100%;
+        height: 100%;
+        grid-row: span 2;
+      }
+      
+      .i2 {
+        background: url(../../Image/2.jpg) no-repeat center center/cover;
+        width: 100%;
+        height: 100%;
+        grid-row: span 4;
+      }
+      .i3 {
+        background: url(../../Image/3.jpg) no-repeat center center/cover;
+        width: 100%;
+        height: 100%;
+        grid-column: span 2;
+      }
+      .i4 {
+        background: url(../../Image/4.jpg) no-repeat center center/cover;
+        width: 100%;
+        height: 100%;
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+      .i5 {
+        background: url(../../Image/5.jpg) no-repeat center center/cover;
+        width: 100%;
+        height: 100%;
+      }
+      .i6 {
+        background: url(../../Image/6.jpg) no-repeat center center/cover;
+        width: 100%;
+        height: 100%;
+      }
+      .i7 {
+        background: url(../../Image/7.jpg) no-repeat center center/cover;
+        width: 100%;
+        height: 100%;
+        grid-row: span 2;
+      }
+      .i8 {
+        background: url(../../Image/8.jpg) no-repeat center center/cover;
+        width: 100%;
+        height: 100%;
+        grid-column: span 3;
+      }
+      .i9 {
+        background: url(../../Image/9.jpg) no-repeat center center/cover;
+        width: 100%;
+        height: 100%;
+        grid-row: span 2;
+      }
+      .i10 {
+        background: url(../../Image/10.jpg) no-repeat center center/cover;
+        width: 100%;
+        height: 100%;
+        grid-column: span 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="imagegallery">
+      <div class="i1">box1</div>
+      <div class="i2">box2</div>
+      <div class="i3">box3</div>
+      <div class="i4">box4</div>
+      <div class="i5">box5</div>
+      <div class="i6">box6</div>
+      <div class="i7">box7</div>
+      <div class="i8">box8</div>
+      <div class="i9">box9</div>
+      <div class="i10">box10</div>
+    </div>
+  </body>
+</html>
