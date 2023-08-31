@@ -1,224 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Border</title>
+    <link rel="stylesheet" href="../CSSstyle/CSSborder.css">
     <style>
-      * {
+    *{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-      }
-      h1 {
+        background-color: rgb(247, 241, 234);
+    }
+    .border{
+        grid-template-columns:  repeat(5 , 1fr);
+        grid-template-rows: repeat(5 , 1fr);
+        display: grid;
+        gap: 15px;
+    }
+    div[class*="box"]{
+        background-color: rgb(226, 118, 51);
+        height: 200px;
+        width: 200px;
+        font-size: 30px;
         text-align: center;
-      }
+        padding-top: 80px;
+    }
+    .box1{
+        border: 10px solid rgb(171, 220, 9);
+    }
+    .box2{
+        border-bottom: 10px solid rgb(200, 231, 116);
+       
+    }
+    .box3{
+        border-left: 10px solid rgb(188, 13, 135);
+        
+    }
+    .box4{
+        border-top: 10px solid rgb(113, 51, 113);
+        
+    }
+    .box5{
+        border-right: 10px solid rgb(55, 2, 55);
+        
+    }
+    .box6{
+        border-radius: 20px ;
+        border:10px double blueviolet;
+    }
+    .box7{
+        border: 10px solid goldenrod;
+        border-top-left-radius: 20px;
+        
+    }
+    .box8{
+        border-bottom-left-radius: 20px;
+        border: 10px solid yellow;
+    }
+    .box9{
+        border-bottom-right-radius: 20px;
+        border: 10px solid green;
+    }
+    .box10{
+        border-top-right-radius: 20px;
+        border: 10px solid pink;
+    }
+    .box11{
+        border-start-start-radius: 20px;
+        border: 10px solid red;
+    }
+    .box12{
+        border-start-end-radius: 20px;
+        border: 10px solid rgb(4, 95, 107);
+    }
+    .box13{
+        border: 10px solid rgb(7, 159, 141);
+        border-top-color: rgb(17, 8, 27);
+    }
+    .box14{
+        border: 10px solid rgb(7, 159, 141);
+       border-top: 30px solid rgb(32, 24, 150);
+    }
+    .box15{
+        border: 10px solid rgb(7, 159, 141);
+        border-bottom:25px rgb(184, 31, 128) solid;
+    }
+    .box16{
+        border: 10px solid rgb(7, 159, 141);
+        border-left: 30px rgb(187, 115, 7) solid;
+    }
+    .box17{
+        border: 10px solid rgb(7, 159, 141);
+        border-right: 35px solid rgb(8, 49, 103);
+    }
+    .box18{
+        border: solid rgb(7, 159, 141);
+        border-width: 20px ;
      
-      .box1 {
-        border-radius: 20px;
-        border: 2px solid brown;
-        height: 300px;
-        width: 300px;
-        text-align: center;
-        font-size: 30px;
-      }
-      .box2 {
-        border-bottom: 5px solid green;
-        /* border: 2px green; */
-        height: 300px;
-        width: 300px;
-
-        text-align: center;
-        font-size: 30px;
-      }
-      .box3 {
-        border-color: black;
-        border-style: solid;
-        height: 300px;
-        width: 300px;
-        text-align: center;
-        font-size: 30px;
-      }
-      .box4 {
-        border-top: 5px solid red;
-        height: 300px;
-        width: 300px;
-        text-align: center;
-        font-size: 30px;
-      }
-      .box5 {
-        border: solid pink;
-        border-width: 5px;
-        height: 300px;
-        width: 300px;
-        text-align: center;
-        font-size: 30px;
-      }
-      .box6 {
-        border-right: 50px solid rgb(181, 238, 11);
-        height: 300px;
-        width: 300px;
-        text-align: center;
-        font-size: 30px;
-      }
-      .box7 {
-        border-style: dotted;
-        height: 300px;
-        width: 300px;
-        text-align: center;
-        font-size: 30px;
+    }
+    .box19{
+        border:  solid rgb(7, 159, 141);
+        border-top-width: 25px ;
+    }
+    .box20{
+        border:  solid rgb(7, 159, 141);
+        border-bottom-width: 20px;
+    }
+    .box21{
+        border:  solid rgb(7, 159, 141);
+        border-left-width: 25px;
+    }
+    .box22{
+        border:  solid rgb(7, 159, 141);
+        border-right-width: 20px;
+    }
+    .box23{
+        border: 10px solid rgb(7, 159, 141);
+        border-style:  25px unset green; 
+    }
+    .box24{
+        border: 10px red;
+        border-style: 20px ;
+    }
+    .box25{
+        border: 10px solid rgb(7, 159, 141);
+        border-style:20px solid rgb(247, 247, 91);
+    }
+    .box26{
+        border: 10px solid rgb(7, 159, 141);
+        border-style:double ;
+    }
+    .box27{
+        border: 10px rgb(7, 159, 141);
         border-style: groove;
-        border-style: outset;
-        border-style: hidden;
-        border-style: inset;
-      }
-      .box8 {
-        border-top-left-radius: 30px;
-        border: 2px solid darkmagenta;
-        height: 300px;
-        width: 300px;
-        text-align: center;
-        font-size: 30px;
-        border-top-right-radius: 30px;
-      }
-      .box9 {
-        border-bottom-left-radius: 30px;
-        border: 2px solid darkmagenta;
-        text-align: center;
-        height: 300px;
-        width: 300px;
-        font-size: 30px;
-        border-bottom-right-radius: 30px;
-      }
-      .box10 {
-        border: 2px solid darkmagenta;
-        text-align: center;
-        height: 300px;
-        width: 300px;
-        font-size: 30px;
-      }
-      .box10 table {
-        border-collapse: collapse;
-        border-collapse: separate;
-        background-color: aqua;
-        border-spacing: 20px;
-        height: 300px;
-        width: 300px;
-      }
-      .box11 {
-        border: solid;
-        border-bottom-color: yellowgreen;
-        border-top-color: palevioletred;
-        border-right-color: purple;
-        border-left-color: burlywood;
-        height: 300px;
-        width: 300px;
-        text-align: center;
-        font-size: 30px;
-      }
-      .box12 {
+    }
+    .box28{
+        border: 10px  rgb(7, 159, 141);
+        border-style:  outset;
+    }
+    .box29{
+        border: 10px  rgb(7, 159, 141);
+        border-style:  inherit ;
+    }
+    .box30{ 
+        border: 10px  rgb(7, 159, 141);
+        border-block: dotted ;
+    }
+    .box31{
+        border: 10px solid rgb(7, 159, 141);
+        border-block-start:20px dashed red;
+    }
+    .box32{
+        border: 10px solid rgb(7, 159, 141);
+        border-block-end:10px dashed blue;
+    
+    }
+    .box33{
+        border:solid rgb(7, 159, 141);
+        border-block-start-width: 20px; 
+    }
+    .box34{
+        border: 10px  rgb(7, 159, 141);
+        border-block-start-style:  dashed ;
+    }
+    .box35{
+        border: 10px  rgb(7, 159, 141);
+        border-block-end-style: ridge ;
+    }
+    .box36{
+        color: brown;
         border: 50px solid;
-        border-image: url(../Image/peacock.jpeg) 30 round;
-        height: 300px;
-        width: 300px;
-        text-align: center;
-        font-size: 30px;
+        border-image: url(../../Image/butterfly.jpg)10;
+        border-image-repeat: no-repeat;
+    }
+    .box37{
+        border: 10px solid rgb(7, 159, 141);
+        border-inline: 10px;
+        border-style: solid ;
+        color: cyan;
         
-      }
-      .box13 {
-        border: 50px solid burlywood;
-        border-top-width: 20px;
-        border-bottom-width: 30px;
-        border-left-width: 40px;
-        border-right-width: 500px;
-        border-width: 50%;
-        height: 300px;
-        width: 300px;
-      }
-      .box14 {
-        border: solid;
-        height: 300px;
-        width: 300px;
-        text-align: center;
-        font-size: 30px;
-        border-block-color: red;
-        border-block-end: blue;
-        border-block-start-color: aquamarine;
-        border-block-width: 50px;
-        border-block-start-style: dotted;
-      }
-      .box15 {
-        border: solid;
-        height: 300px;
-        width: 300px;
-        font-size: 30px;
-        text-align: center;
-        border-inline: purple;
-        border-inline: double;
-        border-inline: 4px dotted blue;
-      }
-      .content[class*="box"]{
-        justify-content: center;
-      }
-      .content{
-        
-        width: 100%;
-      }
-      body{
-        
-        margin: 0px auto;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Border</h1>
-    <div class="content">
-      <br />
-      <div class="box1">border-radius</div>
-      <br />
-      <br />
-      <div class="box2">border-bottom</div>
-      <br /><br />
-      <div class="box3">border-color</div>
-      <br /><br />
-      <div class="box4">border-top</div>
-      <br /><br />
-      <div class="box5">border-width</div>
-      <br /><br />
-      <div class="box6">border-right</div>
-      <br /><br />
-      <div class="box7">border-style</div>
-      <br /><br />
-      <div class="box8">border-top-left-right-radius</div>
-      <br /><br />
-      <div class="box9">border-bottam-left-right-radius</div>
-      <br /><br />
-      <br /><br />
-      <div class="box11">border-top-bottom-right-left-color</div>
-      <br /><br />
-      <div class="box12">border-image</div>
-      <br /><br />
-      <div class="box13">border-Width</div>
-      <br /><br />
-      <div class="box14">bordr-block</div>
-      <br /><br />
-      <div class="box15">border-inline</div>
-      <br /><br />
-    </div>
-    <div class="box10">
-      border-collapse
-      <table border="">
-        <tr>
-          <th>Firstname</th>
-          <th>Lastname</th>
-        </tr>
-        <tr>
-          <td>ABC</td>
-          <td>XYZ</td>
-        </tr>
-      </table>
-    </div>
-    </div>
-    </div>
-  </body>
+    }
+</style>
+</head>
+<body>
+    <div class="border">
+    <div class="box1">Border</div>
+    <div class="box2">border-bottom</div>
+    <div class="box3">Border-left </div>
+    <div class="box4">Border-top</div>
+    <div class="box5">Border-right</div>
+
+    <div class="box6">Border Radius</div>
+    <div class="box7">border-top-left-radius</div>
+    <div class="box8">border-bottom-left-radius</div>
+    <div class="box9">border-bottom-right-radius</div>
+    <div class="box10">border-top-right-radius</div>
+    <div class="box11">border-start-start-radius</div>
+    <div class="box12"> border-start-end-radius</div>
+
+    <div class="box13">border-color</div>
+    <div class="box14">border-top </div>
+    <div class="box15"> border-bottom</div>
+    <div class="box16">border-left</div>
+    <div class="box17">border-right</div>
+    <div class="box18">border width</div>
+    <div class="box19"> border-top-width</div>
+    <div class="box20"> border-bottom-width</div>
+    <div class="box21">border-left-width</div>
+    <div class="box22">border-right-width</div>
+
+    <div class="box23">border unset</div>
+    <div class="box24">border dashed</div>
+    <div class="box25">border solid</div>
+    <div class="box26"> border double</div>
+    <div class="box27">border groove</div>
+    <div class="box28">border outset</div>
+    <div class="box29">border inherit</div>
+
+    <div class="box30">border-block</div>
+    <div class="box31">border-block-start</div>
+    <div class="box32">border-block-end</div> 
+    <div class="box33">border-block-start-width</div> 
+    <div class="box34">border-block-start-style</div> 
+    <div class="box35">border-block-end-style</div>
+
+    <div class="box36">Border Image</div>
+
+    <div class="box37">Border Inline</div>
+
+
+</div>
+    
+</body>
 </html>
