@@ -4,9 +4,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+#header
+{
+       background: url(../Project/image/burger1.png)no-repeat center center/cover;
+ 
+}
 .container
 {
-    background: url(../Project/image/burger1.png)no-repeat center center/cover;
     height: 100vh;
 }
 .img
