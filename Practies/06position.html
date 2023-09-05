@@ -1,32 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Position</title>
     <style>
-        *
-        {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        div[class*="box"]
-        {
-            height: 600px;
-            width:  100%;
-            background-color: aqua;
-            border: 1px solid black;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      div[class*="box"] 
+      {
+        height: 500px;
+        font-size: 40px;
+      }
+      .container {
+        position: fixed;
+        background-color: black;
+        color: bisque;
+        font-size: 30px;
+        top: 0;
+        right: 0;
+      }
+      .sticky
+      {
+        position: sticky;
+        background-color: aquamarine;
+        top: 0;
+  
+      }
+   
+      .box1{
+        background-color: blueviolet;
+      }
+      .box2 {
+        background-color: rgb(107, 211, 83);
+      }
+      .box3 {
+        background-color: rgb(230, 179, 108);
+      }
+      .box4 {
+        background-color: rgb(100, 118, 237);
+      }
+      .box5 {
+        background-color: rgb(241, 65, 153);
+      }
+      div[class*="boxa"]
+      {
+        height: 300px;
+        width: 300px;
+        border: 1px solid black;
+        color: black;
+        position: absolute;
+      }
+      .boxa-b1
+      {
+        background-color: teal;
+        top: 50px;
+        left: 50px;
+        z-index: 1;
+      }
+      .boxa-b2
+      {
+        background-color: rgb(223, 199, 45);
+        top: 80px;
+        left: 80px;
+        z-index: 1;
+      }
+      .boxa-b3
+      {
+        background-color: rgb(72, 193, 79);
+        top: 110px;
+        left: 110px;
+        z-index: 1;
+      }
+      .boxa-b4
+      {
+        background-color: rgb(67, 100, 234);
+        top: 140px;
+        left: 140px;
+        z-index: 1;
+      }
+
     </style>
-</head>
-<body>
-    <div class="container">
-    <div class="box1"></div>
-    <div class="box1"></div>
-    <div class="box1"></div>
-    <div class="box1"></div>
-    <div class="box1"></div>
+  </head>
+  <body>
+    <div class="container">Container</div>
+    <div class="box1">Box1</div>
+    <div class="box2">Box2</div>
+    <div class="box3">Box3
+    <div class="sticky">hello i am sticky</div>
     </div>
-</body>
+    <div class="box4">Box4</div>
+    <div class="box5">Box5
+      <div class="boxa-b1">boxa-1</div>
+      <div class="boxa-b2">boxa-2</div>
+      <div class="boxa-b3">boxa-3</div>
+      <div class="boxa-b4">boxa-4</div>
+
+    </div>
+  </body>
 </html>

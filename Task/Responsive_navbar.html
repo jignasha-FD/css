@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container
+        {
+        margin: 0 auto;
+        padding-bottom: 100px;
+        }
+        nav, .navbar
+        {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(187, 143, 228);
+        }
+        .navbar::before
+        {
+            /* background-color: #000b2c; */
+        }
+        nav
+        {
+        padding: 10px 0px;
+        }
+        .logo{
+       margin-right: 100px;
+        }
+        li{
+        list-style-type: none;
+        }
+        a{
+       
+           padding: 0px 20px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #000b2c;
+        font-weight: bold;
+        font-family: "Myriad Pro";
+        text-align: center;
+        }
+        .bar{
+            font-size: 50px;
+            
+        }
+        .bar::before
+        {
+            .navbar
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        @media (min-width: 576px) { 
+        .navbar
+        {
+            /* background-color: #000b2c; */
+            .bar
+        }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="header-wrapper">
+          <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="../Image/LOGO1.png" alt="" />
+                </div>
+                <ul class="navbar">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fa-solid fa-bars bar" style="color: #000000;"></i>
+
+               </ul>
+</body>
+</html>
