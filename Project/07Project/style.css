@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#header {
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 1) 0,
+      rgba(0, 0, 0, 0.6) 60%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+    url(../07Project/images/logo.jpg) no-repeat center center/cover;
+  height: 100vh;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+nav h1 {
+  color: rgb(229, 9, 20);
+  fill: currentColor;
+  font-size: 50px;
+}
+.select_section select {
+  padding: 8px 20px;
+}
+.select_section button {
+  background-color: rgb(243, 13, 13);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  margin-left: 20px;
+}
+.main_content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.main_content h1 {
+  color: #ffff;
+  font-size: 55px;
+}
+.main_content h1 {
+  padding: 30px 0 0px;
+  margin-top: 70px 0;
+}
+.main_content p {
+  font-size: 30px;
+  padding: 20px 0;
+  color: #ffff;
+}
+.main_content p + p {
+  font-size: 25px;
+  color: #ffff;
+  padding-bottom: 40px 0;
+}
+.button_section {
+  padding-top: 10px 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.button_section input {
+  width: 450px;
+  font-size: 21px;
+  border: none;
+  color: inherit;
+  padding: 15px 5px;
+  border: 1px solid white;
+  background-color: black;
+  opacity: 0.5;
+}
+.button_section button {
+  border: none;
+  padding: 13px 0;
+  width: 200px;
+  font-size: 25px;
+  background-color: rgb(231, 27, 27);
+  color: white;
+}
+section {
+  background-color: black;
+}
+#section,
+#section1,
+#section2,
+#section3 {
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 10px solid rgb(36, 35, 35);
+  padding: 70px 0px;
+  flex-wrap: wrap;
+}
+.section-wrapper {
+  align-self: center;
+  color: #ffff;
+}
+.section-wrapper h1,
+p {
+  padding: 10px 0;
+}
+.section-wrapper h1 {
+  font-size: 50px;
+}
+.section-wrapper p {
+  font-size: 30px;
+}
+#section4 {
+  border-top: 10px solid rgb(36, 35, 35);
+  align-self: center;
+  padding-bottom: 60px;
+}
+#section4 h1 {
+  color: #ffff;
+  text-align: center;
+  font-size: 60px;
+  padding: 80px 0 30px;
+}
+
+.Question {
+  margin: 60px auto;
+  max-width: 750px;
+}
+.Question li {
+  list-style-type: none;
+  width: 100%;
+  padding: 5px 0;
+}
+.Question li label {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  background: rgb(54, 54, 54);
+  color: #ffff;
+  margin-bottom: 2px;
+  cursor: pointer;
+  position: relative;
+}
+label::after {
+  content: "+";
+  font-size: 34px;
+  position: absolute;
+  right: 20px;
+  transition: transform 0.5s;
+}
+
+input[type="radio"] {
+  display: none;
+}
+.Question .detail {
+  background: rgb(54, 54, 54);
+  color: #ffff;
+  font-size: 20px;
+  text-align: left;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+/* .Question input[type="radio"]:checked + label + .detail {
+  max-height: 600px;
+  padding: 30px 20px;
+} */
+.Question input[type="radio"]:checked + label::after {
+  transform: rotate(135deg);
+}
+footer {
+  background-color: black;
+  border-top: 10px solid rgb(36, 35, 35);
+  padding: 30px;
+}
+.footercontainer {
+  color: gray;
+  margin: 0 auto;
+  width: 80%;
+}
+.footercontainer p {
+  font-size: 22px;
+  padding: 20px 0px;
+}
+.footercontainer a {
+  color: gray;
+}
+h4 {
+  padding: 12px 0px;
+}
+.tagname {
+  display: flex;
+  justify-content: space-ar;
+}
+.tagbox {
+  width: 50%;
+}

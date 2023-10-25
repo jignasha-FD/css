@@ -1,0 +1,491 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header
+{
+    background: url(./image/Header\ Background.png)no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+}
+nav,ul,li{
+    display: flex;
+    justify-content:right;
+}
+li
+{
+    list-style: none;
+    font-size: 17px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Open Sans";
+    padding: 30px 60px;
+}
+.logo img
+{
+    padding: 20px 0px 30px 100px;
+}
+nav input
+{
+    border-radius: 50px;
+    height: 35px;
+    width: 120px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border: none;
+}
+.main_content
+{
+    padding: 0px 100px 100px 0px;
+    margin: 0px 100px 100px 0px;
+}
+.main_content_img .img1
+{
+    position: absolute;
+    top: 150px;
+    right: 150px;
+    height: 350px;
+    width: 350px;
+}
+.main_content_img .img2
+{
+    position: absolute;
+        top: 350px;
+        left: 845px;
+        height: 450px;
+        width: 500px;
+}
+.main_content_img .img3 {
+    position: absolute;
+    top: 380px;
+    left: 630px;
+}
+.main_content h1{
+    font-size: 65px;
+    color: #ffffff;
+    font-family: "Reey";
+    filter: drop-shadow(0px 5px 2.5px rgba(84, 82, 79, 0.22));
+    padding: 0px 0px 60px 100px;
+}
+.main_content h2
+{
+  
+        font-size: 25px;
+        color: #ffffff;
+        font-weight: 700;
+        font-style: italic;
+        font-family: "Open Sans";
+        padding: 0px 0px 40px 100px;
+}
+.main_content .btn1
+{
+        font-size: 20px;
+        color: #2e3034;
+        font-weight: 800;
+        font-family: "Open Sans";
+        text-align: center;
+       
+}
+.main_content button
+{
+     padding: 5px 30px;
+     background-color: #343434;
+     border: none;
+     border-radius: 25px;
+     background-color: #ffffff;
+     margin: 0px 0px 0px 100px;
+}
+.main_content p{
+        font-size: 21px;
+        color: #ffffff;
+        font-weight: 400;
+        font-style: italic;
+        font-family: "Open Sans";
+        padding: 10px 100px 100px 100px;
+        margin: 10px 100px 100px 0px;
+}
+
+.heading
+{
+    background-color: #ffffff;
+    padding: 50px 100px;
+    margin: 0px 30px;
+}
+.heading h1
+{
+    font-size: 55px;
+    color: #222328;
+    font-family: "Reey";
+    text-align: center;
+    
+}
+.heading p{
+    font-size: 27px;
+    color: #2f3135;
+    font-weight: 400;
+    font-family: "Open Sans";
+    text-align: center;
+    padding: 50px 100px;
+    margin: 0px 100px;
+}
+.section_content
+{
+    display: flex;
+    justify-content: space-around;
+}
+.content_one h2
+{
+    text-align: center;
+    font-size: 29px;
+    color: #343434;
+    font-weight: 700;
+    font-family: "Open Sans";
+    padding-bottom: 10px;
+    padding-top: 30px;
+    
+}
+.content_one p
+{
+    text-align: center;
+    font-size: 23px;
+    color: #343434;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+.content_two h2 {
+    text-align: center;
+    font-size: 29px;
+    color: #343434;
+    font-weight: 700;
+    font-family: "Open Sans";
+    padding-bottom: 10px;
+    padding-top: 50px;
+
+}
+
+.content_two p {
+    text-align: center;
+    font-size: 23px;
+    color: #343434;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+.btn_section {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+.btn_section button
+{
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 800;
+    font-family: "Open Sans";
+    padding: 10px 30px;
+    border-radius: 38px;
+    background-color: #343434;
+    border: none;
+}
+.section1
+{
+    background-color: #27292c;
+}
+.head p
+{
+    font-size: 55px;
+    line-height: 52px;
+    color: #ffffff;
+    font-family: "Reey";
+    text-align: center;
+    padding: 40px;
+}
+.section1 .content
+{
+    display: flex;
+    justify-content: space-around;
+}
+.column50 p
+{
+    font-size: 16px;
+    line-height: 26px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+    padding: 30px 100px;
+    margin: 0px 40px;
+}
+.button
+{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.section1 button
+{
+    font-size: 20px;
+    color: #27292c;
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-align: center;
+    opacity: 0.902;
+    border-radius: 22px;
+    background-color: #fdfdfd;
+    border: none;
+    padding: 10px 30px;
+}
+.container1
+{
+    display: flex;
+    margin: 30px 0px 0px 100px;
+    align-items: center;
+    padding: 30px 0px;
+}
+.container1 img
+{
+    padding-left: 60px;
+}
+.details1,.details4
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: start;
+}
+.details4 img
+{
+    padding-right: 100px;
+}
+.details2 h2{
+    font-size: 48px;
+    color: #27292c;
+    font-weight: 700;
+    font-family: "Open Sans";
+    padding: 0px 100px;
+    margin: 0px 100px;
+}
+.details2 p
+{
+    
+    font-size: 29px;
+    color: #27292c;
+    font-weight: 400;
+    font-family: "Open Sans";
+    padding: 40px 100px;
+    margin: 0px 100px;
+}
+button
+{  
+    padding-top: 70px;  
+    padding-bottom: 30px;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 800;
+    font-family: "Open Sans";
+    padding: 10px 50px;
+    border-radius: 38px;
+    background-color: #343434;
+    border: none;
+    margin-right: 100px;
+}
+.container2 {
+    display: flex;
+    justify-content: center;
+    padding: 0px 40px;
+    margin: 0px 100px 0px 0px;
+    
+}
+.details3
+{
+    padding: 0px 70px;
+}
+.details3 h2 {
+    font-size: 48px;
+    color: #27292c;
+    font-weight: 700;
+    font-family: "Open Sans";
+    padding: 40px 50px 40px 0px;
+    margin: 0px 50px 0px 100px;
+}
+
+.details3 p {
+
+    font-size: 29px;
+    color: #27292c;
+    font-weight: 400;
+    font-family: "Open Sans";
+    padding: 20px 50px 20px 100px;
+    margin: 0px 50px 0px 0px;
+}
+.section2
+{
+    margin: 0 auto;
+}
+.section3
+{
+    background: url(./image/Header\ Background.png)no-repeat center center/cover;
+}
+.head_section
+{
+   padding: 0px 100px;
+   margin: 0px 50px;
+   position: relative;
+   height: 100vh;
+}
+.head_section h1
+{
+    font-size: 58px;
+    color: #f8f6f1;
+    font-family: "Reey";
+    text-align: center;
+    padding-top: 60px;
+}
+.head_section p
+{    font-size: 20px;
+     color: #f8f6f1;
+    font-weight: 400;
+    font-family: "Montserrat";
+    padding: 60px 100px;
+    margin: 0px 100px;
+}
+.image_section .img1
+{
+    position: absolute;
+    top: 2870px;
+    right: -70px;
+}.image_section .img2
+{ position: absolute;
+    height: 400px;
+    width: 400px;
+    top: 3300px;
+    left: 600px;
+}.image_section .img3 {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    top: 3550px;
+    left: 400px;
+}
+.head_main_section
+{
+    display: flex;
+    justify-content: space-around;
+}
+.section4 .head_main_section h1
+{
+    font-size: 42px;
+    line-height: 33px;
+    color: #393939;
+    font-family: "Reey";
+    padding-top: 100px;
+    margin-top: 50px;
+}
+.section4 .head_main_section p
+{
+    font-size: 19px;
+    color: #333d42;
+    font-weight: 400;
+    font-family: "Open Sans";
+    padding: 20px 10px;
+}
+
+
+.section4 .content p
+{   font-size: 25px;
+    color: #3f3f3f;
+    font-weight: 600;
+    font-family: "Open Sans";
+    text-align: center;
+    padding: 100px 100px 40px 100px;
+    margin: 60px 100px 0px 100px;
+}
+.content h1 {
+    text-align: center;
+    font-size: 21px;
+    color: #3f3f3f;
+    font-weight: 700;
+    font-family: "Open Sans";
+    padding-bottom: 100px;
+} 
+.section5 {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px 0;
+    background-color: #27292c;
+    color: #ffffff;
+    flex-wrap: wrap;
+}
+.five
+{
+    padding: 0px 50px;
+}
+.five h1 {
+    font-weight: 700;
+    font-family: "Open Sans";
+    text-align: center;
+    font-size: 75px;
+}
+.five p {
+    padding: 60px 100px;
+    margin: 0px 100px;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Open Sans";
+    text-align: center;
+}
+
+.email-btn {
+    text-transform: uppercase;
+    font-family: "Open Sans";
+    color: #ffffff;
+    background-color: #54524f;
+    padding: 15px 25px;
+    font-size: 20px;
+}
+
+input[type*="email"] {
+    background-color: #ffffff;
+    border-radius: 32px;
+    padding: 10px 30px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    width: 390px;
+}
+.last-section {
+    background-color: #ffffff;
+    margin: 80px;
+}
+footer
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 0px;
+}
+.about1 ,.about2 b
+{
+    font-size: 28px;
+    color: #343434;
+    font-weight: 400;
+    font-family: "Montserrat";
+}
+.about1 ,.about2 p
+{
+    font-size: 20px;
+    line-height: 25px;
+    color: #343434;
+    font-weight: 400;
+   font-family: "Montserrat";
+        
+}
+
+
+/* .icon i {
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.icon i:hover {
+    cursor: pointer;
+} */
